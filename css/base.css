@@ -1,0 +1,88 @@
+/* ═══════════════════════════════════════════
+   BASE — Variables, Reset, Tipografía
+═══════════════════════════════════════════ */
+
+:root {
+  /* Colores */
+  --rose:        #e8405a;
+  --rose2:       #ff6b8a;
+  --blush:       #f7a8b8;
+  --gold:        #d4a853;
+  --gold2:       #f0c97a;
+  --cream:       #fff8f0;
+  --deep:        #0d0508;
+  --purple2:     #9b4d8e;
+
+  /* Superficies */
+  --glass:       rgba(255, 255, 255, 0.04);
+  --glass2:      rgba(255, 255, 255, 0.08);
+
+  /* Bordes */
+  --border:      rgba(232, 64, 90, 0.2);
+  --border-gold: rgba(212, 168, 83, 0.25);
+
+  /* Tipografía */
+  --font-serif:  'Cormorant Garamond', serif;
+  --font-sans:   'Montserrat', sans-serif;
+  --font-script: 'Dancing Script', cursive;
+
+  /* Espaciado */
+  --section-pad: 7rem 2rem;
+  --section-pad-sm: 4rem 1.2rem;
+
+  /* Transiciones */
+  --t-fast:  0.2s ease;
+  --t-med:   0.35s ease;
+  --t-slow:  0.7s ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  background: var(--deep);
+  color: var(--cream);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--rose);
+  color: #fff;
+}
+
+/* Utilidades globales */
+.section-label {
+  display: inline-block;
+  font-size: .65rem;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  padding: .3rem 1rem;
+  border: 1px solid var(--border-gold);
+  border-radius: 50px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  background: linear-gradient(135deg, var(--cream) 30%, var(--blush) 65%, var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

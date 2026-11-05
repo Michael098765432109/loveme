@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Ti, Mi Amor Eterno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Montserrat:wght@200;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/sections.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="css/experiences.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="canvas"></canvas>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">Amor Eterno</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#razones">Razones</a></li>
+    <li><a href="#poema">Poema</a></li>
+    <li><a href="#carta">Carta</a></li>
+    <li><a href="#momentos">Momentos</a></li>
+    <li><a href="#promesas">Promesas</a></li>
+    <li><a href="#galaxia">Galaxia</a></li>
+  </ul>
+</nav>
+
+<main class="home-view" id="homeView">
+<!-- ══ HERO ══ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="hero-badge">Una historia de amor sin fin</div>
+  <span class="hero-heart" id="heroHeart">💖</span>
+  <h1 id="heroTitle">Eres Mi<br/>Universo</h1>
+  <p class="hero-sub">y en él, todo gira alrededor de ti</p>
+  <p class="hero-desc">Cada latido de mi corazón lleva tu nombre escrito con tinta de eternidad. Eres la razón por la que el tiempo tiene sentido, la razón por la que cada amanecer vale la pena.</p>
+  <div class="hero-cta">
+    <a class="btn-primary" href="#razones">Descubrir más ✦</a>
+    <a class="btn-secondary" href="#poema">Leer el poema 🌹</a>
+  </div>
+  <div class="scroll-hint"><div class="arrow"></div><span>SCROLL</span></div>
+</section>
+
+<!-- ══ STATS ══ -->
+<div class="stats reveal">
+  <div class="stat-item"><span class="stat-num" data-target="365">0</span><span class="stat-label">Días juntos</span></div>
+  <div class="stat-item"><span class="stat-num" data-target="8760">0</span><span class="stat-label">Horas a tu lado</span></div>
+  <div class="stat-item"><span class="stat-num">∞</span><span class="stat-label">Razones para amarte</span></div>
+  <div class="stat-item"><span class="stat-num" data-target="1">0</span><span class="stat-label">Amor de mi vida</span></div>
+</div>
+
+<div class="divider"><em>✦</em></div>
+
+<!-- ══ RAZONES ══ -->
+<section class="reasons" id="razones">
+  <div class="reasons-header reveal">
+    <span class="section-label">Por qué te amo</span>
+    <h2 class="section-title">Razones que<br/>llenan mi alma</h2>
+  </div>
+  <div class="reasons-grid">
+    <div class="reason-card reveal">
+      <span class="reason-num">01</span><span class="reason-icon">🌹</span>
+      <h3>Tu Sonrisa</h3>
+      <p>Cuando sonríes el mundo entero se detiene. No es exageración, es la verdad más pura que he conocido. Esa curva en tus labios tiene el poder de deshacer cualquier tormenta que haya en mi interior, de convertir el día más gris en el más luminoso. Tu sonrisa es mi hogar favorito.</p>
+    </div>
+    <div class="reason-card reveal" style="transition-delay:.1s">
+      <span class="reason-num">02</span><span class="reason-icon">✨</span>
+      <h3>Tu Luz Interior</h3>
+      <p>Tienes una luz que no viene del sol ni de ninguna estrella. Viene de adentro, de ese lugar profundo donde guardas tu bondad, tu ternura, tu manera única de ver el mundo. Esa luz me guía cuando me pierdo, me calienta cuando tengo frío, me recuerda que la belleza existe.</p>
+    </div>
+    <div class="reason-card reveal" style="transition-delay:.2s">
+      <span class="reason-num">03</span><span class="reason-icon">🌙</span>
+      <h3>Tu Calma</h3>
+      <p>En el caos absoluto del mundo, tú eres mi silencio. Hay algo en tu presencia que ordena todo lo que está roto en mí. No necesitas decir nada, no necesitas hacer nada. Solo estar. Y con eso basta. Con eso sobra. Contigo, el ruido del mundo desaparece.</p>
+    </div>
+    <div class="reason-card reveal" style="transition-delay:.3s">
+      <span class="reason-num">04</span><span class="reason-icon">💫</span>
+      <h3>Tu Valentía</h3>
+      <p>Enfrentas cada día con una fuerza que me deja sin palabras. No la fuerza de quien no tiene miedo, sino la de quien lo tiene y avanza de todas formas. Esa valentía silenciosa, cotidiana, sin aplausos, es la que más admiro. Me inspiras a ser mejor cada mañana.</p>
+    </div>
+    <div class="reason-card reveal" style="transition-delay:.4s">
+      <span class="reason-num">05</span><span class="reason-icon">🦋</span>
+      <h3>Tu Alma</h3>
+      <p>Tu alma es la más hermosa que he tenido el privilegio de conocer. Cada conversación contigo es un regalo que atesoro. Cada pensamiento que compartes conmigo es una ventana a un universo que me maravilla. Podría pasarme la vida entera descubriéndote y nunca terminaría.</p>
+    </div>
+    <div class="reason-card reveal" style="transition-delay:.5s">
+      <span class="reason-num">06</span><span class="reason-icon">🌊</span>
+      <h3>Tu Profundidad</h3>
+      <p>Eres como el océano: en la superficie ya eres hermosa, pero cuanto más me adentro en ti, más maravillas encuentro. Capas y capas de historia, de sueños, de miedos, de amor. Nunca terminaré de conocerte, y eso es lo más emocionante que me ha pasado en la vida.</p>
+    </div>
+  </div>
+  <div class="section-cta" aria-label="Explorar otras secciones">
+    <span class="section-cta-label">Sigue descubriendo</span>
+    <div class="section-cta-links">
+      <a class="btn-primary" href="#carta">Leer mi carta 💌</a>
+      <a class="btn-secondary" href="#momentos">Ver nuestra historia ✨</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><em>✦</em></div>
+
+<!-- ══ POEMA INTERACTIVO ══ -->
+<section class="poem-section" id="poema">
+  <div class="poem-header reveal">
+    <span class="section-label">Para ti</span>
+    <h2 class="section-title">Un poema<br/>desde el alma</h2>
+  </div>
+
+  <div class="poem-tabs reveal">
+    <button class="poem-tab active" data-poem="0">I. El Encuentro</button>
+    <button class="poem-tab" data-poem="1">II. La Espera</button>
+    <button class="poem-tab" data-poem="2">III. El Amor</button>
+    <button class="poem-tab" data-poem="3">IV. La Eternidad</button>
+  </div>
+
+  <div class="poem-display reveal">
+    <div class="poem-content active" id="poem-0">
+      <div class="poem-verse">
+        <p>Antes de ti, yo era un libro sin título,<br/>
+        páginas en blanco que el viento doblaba,<br/>
+        palabras a medias que nadie leía,<br/>
+        un verso incompleto que el tiempo olvidaba.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Llegaste sin aviso, como llega la lluvia<br/>
+        después de un verano que quemó la tierra,<br/>
+        y todo lo seco volvió a tener vida,<br/>
+        y todo lo roto encontró su respuesta.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Te vi y entendí lo que nunca entendía:<br/>
+        que el alma no busca, el alma reconoce.<br/>
+        Que hay encuentros que no son casuales,<br/>
+        que hay personas que el universo propone.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Desde ese instante en que nuestros caminos<br/>
+        se cruzaron sin mapa ni brújula cierta,<br/>
+        supe que el mundo tenía otro nombre,<br/>
+        y ese nombre era tuyo, y esa puerta era nuestra.</p>
+      </div>
+      <div class="poem-verse">
+        <p>No fue un relámpago, fue algo más lento,<br/>
+        como el amanecer que no pide permiso,<br/>
+        que va tiñendo de luz lo que era oscuro,<br/>
+        que transforma el silencio en un paraíso.</p>
+      </div>
+    </div>
+
+    <div class="poem-content" id="poem-1">
+      <div class="poem-verse">
+        <p>Hay noches en que el tiempo se hace eterno<br/>
+        y el reloj parece haberse detenido,<br/>
+        noches en que te busco entre las sombras<br/>
+        y encuentro solo el eco de tu olvido.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Pero esperar por ti no es un castigo,<br/>
+        es el precio más dulce que he pagado,<br/>
+        porque cada segundo que transcurre<br/>
+        me acerca más al mundo que has creado.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Te espero en el café que huele a invierno,<br/>
+        te espero en la canción que no termina,<br/>
+        te espero en ese instante entre dos mundos<br/>
+        donde el sueño y la vida se combinan.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Y cuando llegas, todo cobra sentido,<br/>
+        el tiempo recupera su cadencia,<br/>
+        y entiendo que la espera era el camino,<br/>
+        que sin ella no habría esta presencia.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Así que esperaré cuanto haga falta,<br/>
+        mil vidas si es preciso, mil inviernos,<br/>
+        porque lo que contigo se construye<br/>
+        vale más que todos los universos.</p>
+      </div>
+    </div>
+
+    <div class="poem-content" id="poem-2">
+      <div class="poem-verse">
+        <p>Amarte es aprender un idioma nuevo,<br/>
+        uno que no se escribe ni se habla,<br/>
+        que vive en la mirada que te doy<br/>
+        cuando el mundo duerme y tú me llamas.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Amarte es descubrir que soy más grande<br/>
+        de lo que yo creía que podía,<br/>
+        que hay un amor que rompe sus propios límites<br/>
+        y crece más cuanto más se entregaba.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Amarte es el miedo más hermoso,<br/>
+        la vulnerabilidad más poderosa,<br/>
+        es poner en tus manos lo más frágil<br/>
+        y saber que lo cuidas como a una rosa.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Amarte es querer que seas feliz<br/>
+        incluso en los días que no estoy,<br/>
+        es desearte el sol aunque me falte,<br/>
+        es amarte más de lo que me amo yo.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Amarte no es algo que yo hago,<br/>
+        es algo que soy desde que te vi,<br/>
+        eres parte de mí tan profundamente<br/>
+        que ya no sé dónde termino yo y empiezas tú en mí.</p>
+      </div>
+    </div>
+
+    <div class="poem-content" id="poem-3">
+      <div class="poem-verse">
+        <p>Si el tiempo fuera un río, yo elegiría<br/>
+        nadar contigo contra toda corriente,<br/>
+        porque no hay destino que valga la pena<br/>
+        si no lo recorro con quien uno siente.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Si hubiera otras vidas, en todas te busco,<br/>
+        en todas te encuentro, en todas te elijo,<br/>
+        porque el alma no olvida lo que una vez ama<br/>
+        y el amor verdadero no tiene principio.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Cuando ya no estemos, cuando seamos polvo<br/>
+        y el viento nos lleve por mundos lejanos,<br/>
+        algo de lo nuestro quedará flotando,<br/>
+        dos almas que un día se tomaron las manos.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Porque el amor que es real no desaparece,<br/>
+        se transforma, se expande, se hace universo,<br/>
+        se vuelve la luz de alguna estrella nueva,<br/>
+        se vuelve el primer verso de otro verso.</p>
+      </div>
+      <div class="poem-verse">
+        <p>Te amo hoy, te amaré mañana,<br/>
+        te amaré en el silencio y en la tormenta,<br/>
+        te amaré cuando todo cambie y cuando nada,<br/>
+        te amaré en cada vida que se me presenta.</p>
+      </div>
+    </div>
+
+    <div class="poem-nav">
+      <button class="poem-prev" id="poemPrev">←</button>
+      <div class="poem-dots" id="poemDots">
+        <span class="poem-dot active"></span>
+        <span class="poem-dot"></span>
+        <span class="poem-dot"></span>
+        <span class="poem-dot"></span>
+      </div>
+      <button class="poem-next" id="poemNext">→</button>
+    </div>
+  </div>
+  <div class="section-cta" aria-label="Explorar otras secciones">
+    <span class="section-cta-label">Elige nuestro próximo capítulo</span>
+    <div class="section-cta-links">
+      <a class="btn-primary" href="#carta">Continuar con mi carta 💌</a>
+      <a class="btn-secondary" href="#galaxia">Explorar nuestro universo 🌌</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><em>✦</em></div>
+
+<!-- ══ CARTA ══ -->
+<section class="letter-section" id="carta">
+  <div class="letter-wrap">
+    <div class="reveal">
+      <span class="section-label">Mi carta para ti</span>
+      <h2 class="section-title">Palabras que<br/>salen del corazón</h2>
+    </div>
+    <div class="letter-box reveal">
+      <p class="letter-text">
+        Mi amor,<br/><br/>
+        Hay días en que me siento a escribirte y las palabras no alcanzan. No porque no tenga qué decir, sino porque lo que siento por ti es demasiado grande para caber en ningún idioma. Pero lo intento, porque mereces saberlo.<br/><br/>
+        Antes de ti, yo vivía. Respiraba, caminaba, reía. Pero no sabía lo que era <span>estar verdaderamente vivo</span>. Tú me enseñaste eso. Me enseñaste que la vida no es solo lo que pasa, sino cómo se siente cuando hay alguien que la comparte contigo.<br/><br/>
+        Hay algo en la manera en que me miras que me hace sentir que valgo más de lo que creo. Hay algo en tu voz cuando dices mi nombre que me recuerda que existo, que importo, que soy real. <span>Eres el espejo más honesto que he tenido</span>, y en ti me veo mejor de lo que soy.<br/><br/>
+        Quiero que sepas que no te amo por lo que haces, sino por lo que eres. Te amo en los días buenos y en los difíciles. Te amo cuando estás segura y cuando tienes miedo. Te amo en tu silencio y en tu risa. Te amo completa, entera, sin condiciones ni excepciones.<br/><br/>
+        <span>Eres la persona con quien quiero envejecer</span>, la persona con quien quiero ver el mundo, la persona con quien quiero construir cada sueño que todavía no tiene nombre. Eres mi presente y mi futuro, mi calma y mi aventura.<br/><br/>
+        Gracias por existir. Gracias por cruzarte en mi camino. Gracias por quedarte.<br/><br/>
+        Con todo lo que soy y todo lo que seré,
+      </p>
+      <div class="letter-sig">Tuyo, siempre ✦</div>
+    </div>
+    <div class="section-cta" aria-label="Explorar otras secciones">
+      <span class="section-cta-label">Y todavía hay más por sentir</span>
+      <div class="section-cta-links">
+        <a class="btn-primary" href="#momentos">Recordar nuestra historia 🌸</a>
+        <a class="btn-secondary" href="#promesas">Descubrir mis promesas 💍</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><em>✦</em></div>
+
+<!-- ══ TIMELINE ══ -->
+<section class="timeline-section" id="momentos">
+  <div class="section-header reveal">
+    <span class="section-label">Nuestra historia</span>
+    <h2 class="section-title">Los momentos<br/>que nos definen</h2>
+  </div>
+  <div class="tl-track">
+    <div class="tl-item">
+      <div class="tl-dot">🌸</div>
+      <div class="tl-card">
+        <span class="tl-date">Capítulo I</span>
+        <h4>El Primer Encuentro</h4>
+        <p>El universo conspiró durante millones de años para que nuestros caminos se cruzaran exactamente en ese instante. Cada decisión, cada desvío, cada coincidencia aparente nos llevaba hacia ese momento. Nada fue casualidad. Todo fue diseño. Y cuando te vi, algo en mí supo que ya no sería el mismo.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">💬</div>
+      <div class="tl-card">
+        <span class="tl-date">Capítulo II</span>
+        <h4>La Primera Conversación</h4>
+        <p>Hablamos como si nos conociéramos de siempre, como si el tiempo entre nosotros no fuera de horas sino de años. Las palabras fluían sin esfuerzo, los silencios no incomodaban, las risas llegaban solas. Cuando me di cuenta, habían pasado horas y yo no quería que terminara. Nunca había querido tanto que una conversación no terminara.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">🌹</div>
+      <div class="tl-card">
+        <span class="tl-date">Capítulo III</span>
+        <h4>El Primer "Te Quiero"</h4>
+        <p>Tres palabras que cambiaron el eje de mi mundo. Las dije con el corazón en la garganta, con las manos temblando un poco, con el miedo de quien salta al vacío sin saber si hay suelo. Y cuando las dijiste tú también, el vacío se llenó de todo. Desde ese día, todo tiene un color diferente, un sabor más dulce, un peso más hermoso.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">💑</div>
+      <div class="tl-card">
+        <span class="tl-date">Capítulo IV</span>
+        <h4>Construyendo Juntos</h4>
+        <p>Descubrí que cualquier lugar del mundo se convierte en el mejor lugar cuando estás tú. Que los planes no importan tanto como la persona con quien los haces. Que los errores duelen menos cuando hay alguien que los enfrenta contigo. Que la vida ordinaria se vuelve extraordinaria cuando la compartes con quien amas.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">♾️</div>
+      <div class="tl-card">
+        <span class="tl-date">Capítulo ∞</span>
+        <h4>Hoy y Siempre</h4>
+        <p>Cada día contigo es el mejor capítulo de la historia más hermosa que jamás he vivido. Y lo más increíble es que apenas estamos empezando. Nos quedan infinitas páginas por escribir, infinitos amaneceres por ver juntos, infinitas versiones de nosotros por descubrir. Y quiero vivirlas todas, cada una, contigo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-cta" aria-label="Explorar otras secciones">
+    <span class="section-cta-label">La historia continúa</span>
+    <div class="section-cta-links">
+      <a class="btn-primary" href="#promesas">Ver lo que te prometo 💍</a>
+      <a class="btn-secondary" href="#galaxia">Viajar a nuestro universo 🌌</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><em>✦</em></div>
+
+<!-- ══ PROMESAS ══ -->
+<section class="promises" id="promesas">
+  <div class="promises-inner">
+    <div class="promises-header reveal">
+      <span class="section-label">Mis promesas</span>
+      <h2 class="section-title">Lo que te juro<br/>cada día</h2>
+    </div>
+    <div class="promises-grid">
+      <div class="promise-item reveal">
+        <span class="promise-icon">🛡️</span>
+        <h4>Protegerte siempre</h4>
+        <p>Seré tu refugio en cada tormenta, tu escudo en cada batalla. Cuando el mundo sea demasiado, aquí estaré para que puedas descansar.</p>
+      </div>
+      <div class="promise-item reveal" style="transition-delay:.1s">
+        <span class="promise-icon">👂</span>
+        <h4>Escucharte siempre</h4>
+        <p>Cada palabra tuya importa. Cada silencio también. Siempre tendrás mi atención completa, mi presencia real, mi corazón abierto.</p>
+      </div>
+      <div class="promise-item reveal" style="transition-delay:.2s">
+        <span class="promise-icon">🌱</span>
+        <h4>Crecer contigo</h4>
+        <p>Seré mejor persona cada día, no solo por mí sino por nosotros. Quiero que estés orgullosa del hombre que soy a tu lado.</p>
+      </div>
+      <div class="promise-item reveal" style="transition-delay:.3s">
+        <span class="promise-icon">😂</span>
+        <h4>Hacerte reír</h4>
+        <p>Tu risa es el sonido más hermoso del universo. La buscaré siempre, en los días buenos y especialmente en los difíciles.</p>
+      </div>
+      <div class="promise-item reveal" style="transition-delay:.4s">
+        <span class="promise-icon">🤝</span>
+        <h4>Estar en las duras</h4>
+        <p>No solo en los buenos momentos. Estaré más firme cuando más me necesites, más presente cuando todo parezca derrumbarse.</p>
+      </div>
+      <div class="promise-item reveal" style="transition-delay:.5s">
+        <span class="promise-icon">💍</span>
+        <h4>Amarte eternamente</h4>
+        <p>Este amor no tiene fecha de vencimiento. Es para siempre, sin condiciones, sin pausas, sin límites. Hoy, mañana y en todas las vidas.</p>
+      </div>
+    </div>
+    <div class="section-cta" aria-label="Explorar otras secciones">
+      <span class="section-cta-label">Un universo hecho para nosotros</span>
+      <div class="section-cta-links">
+        <a class="btn-primary" href="#galaxia">Explorar nuestro universo 🌌</a>
+        <a class="btn-secondary" href="#carta">Volver a mi carta 💌</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><em>✦</em></div>
+
+<!-- ══ GALAXIA INTERACTIVA ══ -->
+<section class="galaxy-section" id="galaxia">
+  <div class="galaxy-header reveal">
+    <span class="section-label">Nuestro universo</span>
+    <h2 class="section-title">Cada estrella<br/>lleva tu nombre</h2>
+    <p class="galaxy-desc reveal">Haz clic en las estrellas para descubrir los mensajes que guardo para ti</p>
+  </div>
+  <div class="galaxy-map" id="galaxyMap">
+    <div class="star-point" data-msg="Eres la razón por la que creo en el destino 🌟" style="top:20%;left:15%"></div>
+    <div class="star-point" data-msg="Tu risa es mi canción favorita 🎵" style="top:35%;left:72%"></div>
+    <div class="star-point" data-msg="Contigo el tiempo vuela y se detiene al mismo tiempo ⏳" style="top:55%;left:30%"></div>
+    <div class="star-point" data-msg="Eres mi lugar favorito en el mundo 🌍" style="top:25%;left:55%"></div>
+    <div class="star-point" data-msg="Te elegiría en cada vida que me dieran 💫" style="top:65%;left:65%"></div>
+    <div class="star-point" data-msg="Eres la respuesta a preguntas que aún no sé hacer 🌙" style="top:75%;left:20%"></div>
+    <div class="star-point" data-msg="Mi corazón aprendió a latir diferente desde que te conocí 💖" style="top:45%;left:85%"></div>
+    <div class="star-point" data-msg="Eres el sueño del que nunca quiero despertar ✨" style="top:80%;left:50%"></div>
+  </div>
+  <div class="star-tooltip" id="starTooltip"></div>
+  <div class="section-cta" aria-label="Explorar otras secciones">
+    <span class="section-cta-label">Nuestro viaje sigue aquí</span>
+    <div class="section-cta-links">
+      <a class="btn-primary" href="#carta">Leer mi carta otra vez 💌</a>
+      <a class="btn-secondary" href="#inicio">Volver al comienzo ↑</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ QUOTE FINAL ══ -->
+<section class="quote-final">
+  <blockquote class="reveal">
+    "Amarte no es algo que hago, es algo que soy. Eres parte de mí tan profundamente que ya no sé dónde termino yo y dónde empiezas tú. Y esa confusión es la cosa más hermosa que me ha pasado."
+    <cite>— Con todo mi amor, para toda la eternidad</cite>
+  </blockquote>
+</section>
+
+<!-- ══ FINAL ══ -->
+<section class="cta-final">
+  <span class="cta-heart-big reveal">💖</span>
+  <h2 class="reveal">Te Amo,<br/>Hoy y Siempre</h2>
+  <p class="reveal">No hay palabras suficientes en ningún idioma para describir lo que siento por ti. Pero lo intento cada día, con cada latido, con cada respiración.</p>
+  <div class="section-cta">
+    <span class="section-cta-label">Siempre podemos volver a empezar</span>
+    <div class="section-cta-links">
+      <a class="btn-primary" href="#inicio">Volver al comienzo ↑</a>
+      <a class="btn-secondary" href="#galaxia">Visitar nuestro universo 🌌</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Amor Eterno</div>
+  <ul class="footer-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#razones">Razones</a></li>
+    <li><a href="#poema">Poema</a></li>
+    <li><a href="#carta">Carta</a></li>
+    <li><a href="#momentos">Momentos</a></li>
+    <li><a href="#promesas">Promesas</a></li>
+    <li><a href="#galaxia">Galaxia</a></li>
+  </ul>
+  <p class="footer-copy">Hecho con ❤️ solo para ti · Para siempre y más allá</p>
+</footer>
+</main>
+
+<div class="experience-app" id="experienceApp" hidden>
+  <header class="experience-topbar">
+    <button class="experience-back" type="button" data-open-view="home">← <span>Volver a la página</span></button>
+    <span class="experience-brand">Amor Eterno <span>✦</span></span>
+    <span class="experience-counter" id="experienceCounter"></span>
+  </header>
+
+  <main class="experience-screen experience-reasons" data-experience="reasons" hidden>
+    <div class="experience-heading">
+      <span class="experience-eyebrow">01 · Lo que veo en ti</span>
+      <h1>Pequeñas cosas,<br/><em>un amor inmenso</em></h1>
+      <p>No hace falta una fecha especial para recordar todo lo que admiro de ti.</p>
+    </div>
+    <div class="admiration-grid">
+      <article><span>✧</span><h2>Tu forma de ser</h2><p>Me encanta esa esencia tuya que no se parece a nadie más. No tienes que hacer nada extraordinario para ser especial.</p></article>
+      <article><span>☼</span><h2>La luz que compartes</h2><p>Hay algo en tu manera de mirar el mundo que hace que hasta los días sencillos tengan un brillo distinto.</p></article>
+      <article><span>♡</span><h2>Lo que despiertas en mí</h2><p>Conocerte me hizo querer escuchar mejor, querer crecer y cuidar con más intención a las personas que amo.</p></article>
+      <article><span>❋</span><h2>Tu manera de reír</h2><p>Extraño esa alegría que aparece cuando te ríes de verdad. Es uno de esos sonidos que el corazón guarda.</p></article>
+      <article><span>☾</span><h2>Tu mundo interior</h2><p>Admiro tus ideas, tus sueños y todas esas partes de ti que hacen que siempre haya algo nuevo por descubrir.</p></article>
+      <article><span>∞</span><h2>Que seas tú</h2><p>No quiero convertirte en alguien distinto. Te quiero por quien eres, con tu historia, tu voz y tu libertad.</p></article>
+    </div>
+    <div class="experience-next"><span>¿Seguimos?</span><button type="button" data-open-view="poem">Tengo algo que decirte <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-poem" data-experience="poem" hidden>
+    <div class="poem-spotlight">
+      <span class="experience-eyebrow">02 · Unas palabras para ti</span>
+      <span class="poem-sparkle">✳</span>
+      <h1>Si pudiera hablar<br/>con el <em>silencio</em></h1>
+      <div class="poem-lines">
+        <p>Le diría que aún pronuncia tu nombre,<br/>despacito, para no despertar la distancia.</p>
+        <p>Que hay recuerdos que no pesan:<br/>son lucecitas que me acompañan.</p>
+        <p>Y que aunque hoy no sepa el camino,<br/>agradezco haber coincidido contigo.</p>
+      </div>
+      <span class="poem-signature">Con cariño, siempre</span>
+    </div>
+    <div class="poem-fragments">
+      <article><span>01 / Te extraño</span><p>Hay días en que una canción, una risa o un detalle pequeño me lleva de vuelta a ti.</p></article>
+      <article><span>02 / Te admiro</span><p>Quiero que sepas que sigo deseándote cosas bonitas, incluso desde lejos y en silencio.</p></article>
+      <article><span>03 / Te quiero</span><p>Lo que siento es mío para cuidar; no es una deuda que tú tengas que devolverme.</p></article>
+    </div>
+    <div class="experience-next"><span>Una carta, sin prisa</span><button type="button" data-open-view="letter">Abrir mi carta <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-letter" data-experience="letter" hidden>
+    <div class="letter-layout">
+      <aside class="letter-aside"><span>PARA TI</span><i>♡</i><small>Leída con el corazón</small></aside>
+      <article class="letter-paper">
+        <span class="experience-eyebrow">03 · Una carta honesta</span>
+        <h1>Quería decirte<br/><em>esto con calma</em></h1>
+        <p>Hola, bonita:</p>
+        <p>Te extraño. Extraño las cosas lindas que compartimos y también hay momentos en que me descubro pensando en todo lo que todavía quisiera decirte. No escribo esto para pedirte una respuesta ni para cambiar lo que tú sientes. Solo quería ser sincero contigo.</p>
+        <p>Te quiero y me gustaría que algún día pudiéramos conversar, si tú también lo deseas. Me gustaría saber cómo estás y escuchar cómo viviste nuestra historia, incluso las partes que quizá yo no supe comprender bien.</p>
+        <p>Sé que querer a alguien también significa respetar su espacio y sus decisiones. No puedo prometer que cambiaré todo de un día para otro, pero sí puedo hacerme responsable de lo que me corresponde, aprender de mis errores y demostrar con hechos la persona que quiero ser.</p>
+        <p>Si nuestros caminos vuelven a encontrarse, quisiera que fuera desde la honestidad, el cuidado mutuo y la libertad de los dos. Y si no es lo que quieres, voy a respetarlo. De corazón, deseo que estés bien.</p>
+        <p class="letter-signoff">Con cariño,<br/><em>alguien que aún te quiere</em></p>
+      </article>
+    </div>
+    <div class="experience-next"><span>También guardo nuestros momentos</span><button type="button" data-open-view="memories">Ver recuerdos <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-memories" data-experience="memories" hidden>
+    <div class="experience-heading">
+      <span class="experience-eyebrow">04 · Un álbum del corazón</span>
+      <h1>Momentos que<br/><em>guardo con cariño</em></h1>
+      <p>No son una cuenta atrás ni una petición. Solo recuerdos que agradezco haber vivido.</p>
+    </div>
+    <div class="memory-album">
+      <article class="memory-card memory-card-one"><span>UN INSTANTE</span><h2>Cuando todo empezó</h2><p>Ese nervio bonito de descubrir a alguien y querer saber un poquito más.</p><i>✳</i></article>
+      <article class="memory-card memory-card-two"><span>UNA CONVERSACIÓN</span><h2>Las horas que volaban</h2><p>Hablar de todo y de nada, y sentir que el tiempo se hacía chiquito.</p><i>☾</i></article>
+      <article class="memory-card memory-card-three"><span>UNA RISA</span><h2>La alegría sencilla</h2><p>Esos momentos cotidianos que se volvieron especiales solo por compartirlos.</p><i>♡</i></article>
+      <article class="memory-card memory-card-four"><span>LO QUE APRENDÍ</span><h2>Querer también es cuidar</h2><p>Me quedo con lo bueno y también con lo que me toca aprender para hacerlo mejor.</p><i>✧</i></article>
+    </div>
+    <p class="memory-note">Este álbum guarda sentimientos, no expectativas. Tu historia y tus decisiones te pertenecen.</p>
+    <div class="experience-next"><span>Lo que quiero hacer mejor</span><button type="button" data-open-view="promises">Mis compromisos <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-promises" data-experience="promises" hidden>
+    <div class="experience-heading">
+      <span class="experience-eyebrow">05 · Compromisos conmigo mismo</span>
+      <h1>Querer mejor<br/><em>se demuestra</em></h1>
+      <p>No quiero prometer por prometer. Estos son cambios que me corresponde trabajar, estés o no estés conmigo.</p>
+    </div>
+    <div class="promise-board">
+      <article><b>01</b><div><h2>Escuchar de verdad</h2><p>Dar espacio a lo que sientes sin interrumpir, defenderme de inmediato ni restarle importancia.</p></div><span>↗</span></article>
+      <article><b>02</b><div><h2>Hablar con honestidad</h2><p>Expresar lo que siento con calma, sin juegos, silencios castigadores ni palabras que lastimen.</p></div><span>↗</span></article>
+      <article><b>03</b><div><h2>Hacerme responsable</h2><p>Reconocer mis errores, reparar lo que pueda y cambiar hábitos con acciones constantes.</p></div><span>↗</span></article>
+      <article><b>04</b><div><h2>Respetar tus límites</h2><p>Tu tiempo, tu espacio y tu respuesta son tuyos. No voy a presionarte para obtenerlos.</p></div><span>↗</span></article>
+      <article><b>05</b><div><h2>Cuidar también de mí</h2><p>Crecer como persona desde un lugar sano; el amor no debería pedirme que deje de ser yo.</p></div><span>↗</span></article>
+    </div>
+    <div class="experience-next"><span>Hay cosas que no caben en palabras</span><button type="button" data-open-view="miss">Lo que extraño <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-miss" data-experience="miss" hidden>
+    <div class="miss-layout">
+      <div class="miss-orbit" aria-hidden="true"><span>♡</span><i>✦</i><b>✧</b></div>
+      <div class="miss-copy">
+        <span class="experience-eyebrow">06 · Hay días en que te extraño</span>
+        <h1>Sigues apareciendo<br/>en <em>mis pensamientos</em></h1>
+        <p>No como una obligación ni como una pregunta que tengas que responder. A veces simplemente recuerdo algo bonito y deseo que estés bien.</p>
+        <div class="miss-note" aria-live="polite">
+          <span id="missNoteCount">PENSAMIENTO 01 / 06</span>
+          <p id="missNote">A veces una canción me devuelve a un momento bonito que compartimos. La escucho, sonrío un poquito y te deseo un día lindo.</p>
+        </div>
+        <button class="miss-next" type="button" data-next-note>Otro pensamiento <b>↗</b></button>
+      </div>
+    </div>
+    <div class="experience-next"><span>Quiero que estés bien, estés donde estés</span><button type="button" data-open-view="galaxy">Ver nuestro cielo <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-galaxy" data-experience="galaxy" hidden>
+    <div class="galaxy-orbit orbit-a"></div><div class="galaxy-orbit orbit-b"></div>
+    <div class="galaxy-content">
+      <span class="experience-eyebrow">07 · Mensajes en el cielo</span>
+      <h1>Un universo de<br/><em>cosas que siento</em></h1>
+      <p>Toca una estrella. Cada una guarda un pensamiento, sin pedirte nada a cambio.</p>
+      <div class="constellation" id="constellation">
+        <button type="button" style="--x:15%;--y:25%" data-message="Te extraño, y también respeto el espacio que necesitas.">✦</button>
+        <button type="button" style="--x:38%;--y:15%" data-message="Gracias por los momentos bonitos que compartimos.">✧</button>
+        <button type="button" style="--x:68%;--y:26%" data-message="Deseo que encuentres razones para sonreír cada día.">✦</button>
+        <button type="button" style="--x:85%;--y:43%" data-message="Me gustaría hablar contigo algún día, solo si tú también quieres.">✧</button>
+        <button type="button" style="--x:22%;--y:65%" data-message="Estoy aprendiendo a querer con más paciencia y cuidado.">✦</button>
+        <button type="button" style="--x:55%;--y:72%" data-message="Lo que siento no te obliga a sentir lo mismo.">✧</button>
+        <button type="button" style="--x:78%;--y:82%" data-message="Aunque no sé qué traerá el futuro, hoy te deseo bienestar.">✦</button>
+        <span class="constellation-message" id="constellationMessage" aria-live="polite">Elige una estrella para leer su mensaje ✨</span>
+      </div>
+    </div>
+    <div class="experience-next"><span>Si algún día te nace</span><button type="button" data-open-view="beginning">Leer sobre un nuevo comienzo <b>→</b></button></div>
+  </main>
+
+  <main class="experience-screen experience-beginning" data-experience="beginning" hidden>
+    <div class="beginning-card">
+      <span class="beginning-flower">❋</span>
+      <span class="experience-eyebrow">08 · Sin prisa y sin presión</span>
+      <h1>Si algún día<br/>volvemos a <em>hablar</em></h1>
+      <p>No quisiera regresar exactamente a lo de antes. Si alguna vez los dos quisiéramos intentarlo, me gustaría que pudiéramos construir algo nuevo: con más escucha, más paciencia, más honestidad y cuidado de ambos lados.</p>
+      <p>No puedo cambiar “todo de mí” para que alguien me quiera; sí puedo trabajar en mis errores y crecer porque es mi responsabilidad. Y nunca quisiera que tú tuvieras que cambiar quién eres para estar conmigo.</p>
+      <p>Esto no es una pregunta escondida ni una espera que te pongo encima. Es solo la verdad de lo que siento hoy: te quiero, te extraño y, si algún día tú también lo deseas, me gustaría conversar. Tu respuesta —o tu silencio— merece respeto.</p>
+      <span class="beginning-signature">Con cariño, hoy y siempre ♡</span>
+    </div>
+    <div class="experience-next"><span>Volver a recorrerlo</span><button type="button" data-open-view="reasons">Descubrir lo que admiro de ti <b>→</b></button></div>
+  </main>
+</div>
+
+<script src="js/canvas.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/poem.js"></script>
+<script src="js/galaxy.js"></script>
+<script src="js/experiences.js"></script>
+</body>
+</html>
